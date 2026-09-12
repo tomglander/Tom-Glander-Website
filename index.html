@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tom Glander — Digital Art, Motion, Sound & Time</title>
+<meta name="description" content="Digital art and experimental apps by Tom Glander.">
+<style>
+:root{--bg:#000;--fg:#f5f5f7;--muted:#909096;--line:#1a1a1d;--max:1500px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#000;color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}.wrap{width:min(92vw,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.74);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.05)}
+nav{width:min(92vw,var(--max));height:62px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:600}.right{display:flex;gap:26px;font-size:14px;color:#b8b8bd}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:5vw;padding:8vh 0 10vh}
+.kicker{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#74747b;margin-bottom:24px}
+h1{margin:0;font-size:clamp(72px,11vw,180px);line-height:.86;letter-spacing:-.07em;font-weight:700;max-width:980px}
+.hero p,.copy p,.about p,.store p{color:#a3a3aa;line-height:1.4}
+.hero p{font-size:clamp(20px,2.1vw,32px);max-width:670px;margin-top:34px}
+.hero-art{min-height:580px;display:flex;align-items:center;justify-content:center}
+.hero-art img{width:min(100%,650px);border-radius:50%;filter:drop-shadow(0 0 70px rgba(80,110,255,.16))}
+.manifesto{min-height:80vh;display:flex;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.manifesto p{margin:0;font-size:clamp(58px,8.5vw,140px);line-height:.94;letter-spacing:-.06em;font-weight:650}
+.manifesto span{color:#54545b}
+.project{min-height:100vh;padding:10vh 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:7vw}
+.project:nth-child(even) .art{order:2}.project:nth-child(even) .copy{order:1}
+.art{min-height:650px;border-radius:34px;overflow:hidden;background:radial-gradient(circle at 50% 40%,#17171b,#09090b 55%,#030304);border:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center}
+.art img{width:100%;height:100%;max-height:760px;object-fit:contain}
+.copy h2,.about h2,.store h2{margin:0;line-height:.92;letter-spacing:-.055em;font-weight:650}
+.copy h2{font-size:clamp(58px,7vw,120px)}
+.copy p{font-size:clamp(20px,2vw,31px);max-width:600px;margin-top:28px}
+.meta{margin-top:26px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6d6d73}
+.explore{
+  display:inline-block;
+  margin-top:28px;
+  font-size:16px;
+  font-weight:500;
+  color:#d7d7dc;
+  transition:color .2s ease, transform .2s ease;
+}
+.explore:hover{color:#fff;transform:translateX(3px)}
+
+.about{min-height:82vh;display:flex;align-items:center}
+.about h2{font-size:clamp(58px,8vw,130px);max-width:1200px}
+.about p{font-size:clamp(20px,2vw,30px);max-width:760px;margin-top:34px}
+.store{min-height:92vh;display:flex;align-items:center;text-align:center;border-top:1px solid var(--line)}
+.store h2{font-size:clamp(64px,10vw,160px);max-width:1250px;margin:auto}
+.store p{font-size:clamp(19px,1.8vw,28px);max-width:650px;margin:30px auto 0}
+.cta{display:inline-flex;margin-top:38px;padding:16px 24px;border-radius:999px;background:#f5f5f7;color:#050506;font-weight:600}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#6f6f75;font-size:14px}
+.footer{width:min(92vw,var(--max));margin:auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+@media(max-width:900px){.right{display:none}.hero,.project{grid-template-columns:1fr}.hero-art{min-height:420px}.project:nth-child(even) .art,.project:nth-child(even) .copy{order:initial}.art{min-height:460px}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand">Tom Glander</div><div class="right"><a href="#work">Work</a><a href="#about">About</a><a href="#store">App Store</a></div></nav></header>
+<main>
+<section class="wrap hero">
+  <div><div class="kicker">Digital art · motion · sound · code</div><h1>Other worlds.<br>Built here.</h1><p>I create visual and sonic experiences that turn time, motion and code into something you can feel.</p></div>
+  <div class="hero-art"><img src="assets/hero-orb.png" alt="Abstract orbital digital artwork"></div>
+</section>
+
+<section class="manifesto"><div class="wrap"><p>Not utility.<br><span>Experience.</span></p></div></section>
+
+<div id="work">
+<section class="wrap project"><div class="art"><img src="assets/moodclock.png"></div><div class="copy"><div class="kicker">01 — Mechanical</div><h2>MoodClock.</h2><p>Time becomes machinery. Gears, light and motion transform the minute into a living mechanical event.</p><div class="meta">Time moves the machine.</div><a class="explore" href="https://moodclock.com">Explore MoodClock →</a></div></section>
+
+<section class="wrap project"><div class="art"><img src="assets/quantumclock.png"></div><div class="copy"><div class="kicker">02 — Quantum</div><h2>QuantumClock.</h2><p>Particles orbit. Fields move. Time becomes something less like a number and more like a place.</p><div class="meta">A clock you experience.</div><a class="explore" href="https://quantumclock.app">Explore QuantumClock →</a></div></section>
+
+<section class="wrap project"><div class="art"><img src="assets/chronocyte.png"></div><div class="copy"><div class="kicker">03 — Organic</div><h2>Chronocyte.</h2><p>A living visual system that happens to tell time. It pulses, blooms and behaves more like an organism than a clock.</p><div class="meta">Time with a metabolism.</div></div></section>
+
+<section class="wrap project"><div class="art"><img src="assets/orbital-sound-machine.png"></div><div class="copy"><div class="kicker">04 — Sonic</div><h2>Orbital Sound Machine.</h2><p>Time doesn’t just pass. It has a voice. Motion, orbit and sound make the arrival of a minute perceptible.</p><div class="meta">The minute arrives. The minute recedes.</div></div></section>
+
+<section class="wrap project"><div class="art"><img src="assets/steampunk.png"></div><div class="copy"><div class="kicker">05 — Mechanical</div><h2>Steampunk.</h2><p>Pressure, brass, valves and motion. A time machine with too much energy to sit still.</p><div class="meta">Pressure becomes time.</div></div></section>
+</div>
+
+<section class="about" id="about"><div class="wrap"><div class="kicker">Tom Glander</div><h2>Art made with code.</h2><p>Independent digital work exploring time, movement, sound and visual systems. Each piece has its own identity. The common thread is curiosity.</p></div></section>
+
+<section class="store" id="store"><div class="wrap"><div class="kicker">The Collection</div><h2>Take one with you.</h2><p>Explore the complete collection of Tom Glander apps on the App Store.</p><a class="cta" href="#">View on the App Store →</a></div></section>
+</main>
+<footer><div class="footer"><div>Tom Glander</div><div>Digital art · motion · sound · code</div><div>© 2026</div></div></footer>
+</body>
+</html>
